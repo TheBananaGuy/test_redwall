@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Aleksei Mattal -- Developer -- has no twitter
+
+# THANKS
+
+    Marcin Dobroszek
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JavaScript
+    Bootstrap 4, jQuery

@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// Button component
+// -----------------------------------------------------------------------------
+
+.btn {
+    font-weight: $font-weight-bold;
+    border-radius: 0;
+    padding: $spacing $spacing*3;
+    position: relative;
+    vertical-align: middle;
+
+    &-sm {
+        padding: $spacing/4 $spacing*1.5;
+    }
+
+    &-lg {
+        padding: $spacing*3;
+    }
+
+    &-primary {
+        &:not(:disabled):not(.disabled) {
+            &:hover, &:active, &:focus, {
+                border: 1px solid $red-dark;
+                background-color: $red-dark;
+            }
+        }
+    }
+
+    &-secondary {
+        background-color: $white;
+        border: 2px solid $text-color-dark;
+        color: $text-color-dark;
+
+        &:not(:disabled):not(.disabled) {
+            &:hover, &:active, &:focus, {
+                color: currentColor;
+                border: 2px solid $red;
+                background-color: initial;
+            }
+        }
+    }
+
+    &--fluid-responsive {
+        @media all and (max-width: 767px) {
+            width: 100%;
+            padding: $spacing;
+        }
+    }
+}

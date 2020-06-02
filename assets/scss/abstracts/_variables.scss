@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+
+
+// Colors
+//
+
+$white:    #fff;
+$gray-100: #f4f4f4;
+$gray-200: #dfdfdf;
+$gray-300: #c1c1c1;
+$gray-400: #9f9f9f;
+$gray-500: #787878;
+$gray-600: #515151;
+$gray-700: #2d2d2d;
+$gray-800: #0f0f0f;
+// $gray-900: #212529;
+$black:    #000;
+
+$brand1: #0c0c0c;
+$brand2: #3088c7;
+$brand2-medium: #adcfe7;
+$brand2-light: #c7deef;
+
+$blue:     $brand2;
+$red:      #ee1d4c;
+$red-dark: #be0e36;
+$orange:   #fb6340;
+$green:    #189056;
+
+$primary:  $red;
+$success:  $green;
+$info:     $blue;
+$danger:   $red;
+
+$transparent: rgba(0,0,0,0);
+
+
+// Body
+//
+
+$body-bg:      $white;
+$body-color:   $brand1;
+
+
+// Typography
+//
+
+$font-family-sans-serif:    Helvetica, Arial, sans-serif;
+$font-family-base:          $font-family-sans-serif;
+
+$font-size-base:            1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:              $font-size-base * 1.25;
+$font-size-sm:              $font-size-base * .8;
+
+$font-weight-light:         300;
+$font-weight-normal:        400;
+$font-weight-bold:          700;
+$font-weight-bolder:        900;
+
+$h1-font-size:              $font-size-base * 2.5;
+$h2-font-size:              $font-size-base * 2;
+
+$h1-font-size-mobile:       $font-size-base * 2.2;
+$h2-font-size-mobile:       $font-size-base * 1.9;
+
+$headings-font-weight:      $font-weight-bolder;
+
+$text-color-light: $white;
+$text-color-dark: $body-color;
+
+
+// Header
+//
+
+$header-bg:                         $body-bg;
+
+
+// Spacing
+// 
+
+$spacing: 8px;
+
+$grid-gutter-width: $spacing*2;
+
+
+// Transparent backgrounds
+// 
+
+$bg-dimmed: rgba(0, 0, 0, 0.2);
+$bg-transparent-dark: rgba(12, 12, 12, 0.8);
+$bg-transparent-light: rgba(255, 255, 255, 0.85);
+
+
+// Transition times
+// 
+
+$transition-slow: 1.5s ease-out;
+$transition-regular: 0.75s ease-out;
+$transition-fast: 0.25s ease-out;

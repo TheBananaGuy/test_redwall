@@ -1,0 +1,121 @@
+.lang {
+    margin-top: $spacing*3;
+    margin-right: $spacing*3;
+    padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    font-size: $font-size-sm;
+
+    @media all and (min-width: 768px) {
+        margin-right: $spacing*4;
+    }
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+        margin-left: $spacing*2;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a, a:hover {
+            text-decoration: none;
+        }
+    }
+
+    &--current {
+        font-weight: $font-weight-bold;
+    }
+}
+
+.logo {
+    width: 100%;
+    max-width: 190px;
+
+    @media all and (min-width: 768px) {
+        max-width: 420px;
+    }
+
+    &__wrapper {
+        width: 100%;
+        margin: $spacing*1.2 0 0 $spacing*2;
+
+        @media all and (min-width: 768px) {
+            max-width: 420px;
+            margin: $spacing*3;
+        }
+    }
+}
+
+.cookies {
+    position: fixed;
+    top: $spacing*2;
+    left: $spacing*2;
+    z-index: 9001;
+    color: $body-color;
+    background-color: $white;
+    padding: $spacing $spacing*2;
+    box-shadow: 0 $spacing $spacing*2 $bg-dimmed;
+
+    &__text {
+        margin-right: $spacing;
+
+        @media all and (min-width: 768px) {
+            margin-right: $spacing*2;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    @media all and (min-width: 768px) {
+        top: unset;
+        bottom: $spacing*3;
+        left: $spacing*3;
+    }
+}
+
+.min-height-image {
+    height: 260px;
+}
+
+.sticky-contacts {
+    display: block;
+    position: fixed;
+    z-index: 420;
+    left: 0;
+    bottom: 0;
+    padding: $spacing;
+    width: 100%;
+    transition: none;
+
+    @media all and (min-width: 768px) {
+        opacity: 0;
+
+        width: initial;
+        padding: $spacing*2;
+        transition: opacity $transition-fast;
+
+        &--visible {
+            opacity: 1;
+        }
+    }
+}
+
+.icon {
+    &--download {
+        height: 20px;
+        position: relative;
+        margin-right: 30px;
+
+        &::before {
+            position: absolute; 
+            bottom: 3px;
+            content: url('./../../images/cloud_download_white.svg');
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+// basic style for copy text
+//
+// example:
+// https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_typography.scss
+
+h1, .h1 {
+    font-size: $h1-font-size-mobile;
+}
+
+h2, .h2 {
+    font-size: $h2-font-size-mobile;
+}
+
+@media all and (min-width: 768px) {
+    h1, .h1 {
+        font-size: $h1-font-size;
+    }
+    
+    h2, .h2 {
+        font-size: $h2-font-size;
+    }
+}
+
+.heading {
+    &--main {
+        max-width: 950px;
+        margin: $spacing*2 0;
+        margin-bottom: $spacing*6;
+        color: $white;
+        text-shadow: 0 0 $spacing*3 $black;
+
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    &--overline {
+        border-top: 4px solid currentColor;
+        padding-top: $spacing*2;
+        padding-bottom: $spacing*4;
+    }
+}
+
+a {
+    color: currentColor;
+    text-decoration: underline;
+
+    &:hover {
+        color: currentColor;
+    }
+}
+
+.no-decor, .no-decor:hover {
+    text-decoration: none;
+}
+
+.line-height--1 {
+    line-height: 1;
+}
